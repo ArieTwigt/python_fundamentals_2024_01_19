@@ -21,6 +21,4 @@ def export_data(df, brand):
 
     # export to csv
     df.to_csv(file_path)
-
-    print("Exported to csv")
     

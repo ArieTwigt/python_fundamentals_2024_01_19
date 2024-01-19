@@ -41,7 +41,7 @@ def retreive_plate(plate):
 
 # Other: Method that will handle both (main.py should be changed)
 def import_from_rdw(selected, import_type):
-    endpoint = "https://opendata.rdw.nl/resource/m9d7-ebf2.json?"
+    endpoint = "https://opendata.rdw.nl/resource/m9d7-ebf2.json?$limit=50000"
     
     if import_type == "plate":
         endpoint = endpoint + f"?kenteken={selected}"
